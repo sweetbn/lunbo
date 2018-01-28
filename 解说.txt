@@ -1,2 +1,5 @@
 绝对定位下  margin：0 auto；定位失效
 
+
+循环
+!function(i){}(i);   (function(i){})(i);    let代替var
