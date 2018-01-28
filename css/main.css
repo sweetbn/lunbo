@@ -1,0 +1,58 @@
+#container{
+	width: 600px;
+	height: 400px;
+	margin: 50px auto;
+	position: relative;
+	overflow: hidden;
+
+}
+
+#list{
+	position: absolute;
+	/*left: -600px;*/
+	width: 4200px;
+}
+
+#list img{
+	float: left;
+}
+#buttons{
+	position: absolute;
+	width: 100px;
+	height: 20px;
+	left: 250px;
+	bottom: 25px;
+}
+#buttons span{
+	display: inline-block;
+	height: 8px;
+	width: 8px;
+	margin-left: 6px;
+	border-radius: 50%;
+	border:1px solid #fff;
+}
+.on{
+	background-color: orange;
+}
+
+#pre,#next{
+	width: 50px;
+	height: 100px;
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+	top: 150px;
+	font-size: 50px;
+	color: #fff;
+	line-height: 90px;
+	text-align: center;
+	cursor:pointer;
+	/*display: none;*/
+}
+
+#pre{
+	left: 10px;
+}
+#next{
+	right: 10px;
+}
+
