@@ -6,6 +6,7 @@ window.onload=function(){
 	var buttons=document.getElementById('buttons').getElementsByTagName('span');
 	var isclick=false;
 	var index=1;
+	var timer;
 
 	function yuandian(){//下面的小圆点样式的改变
 		for (var i =0;i<buttons.length; i++) {
@@ -61,10 +62,26 @@ window.onload=function(){
 				qiehuan(kuadu);
 		};
 		}(i);
-		
-		
 	};
 
+
+	function play(){
+		timer=setInterval(function(){
+		next.onclick();
+		},3000);
+	}
+
+	container.onmouseover=function(){
+		next.style.display='block';
+		pre.style.display='block';
+		clearInterval(timer);
+	}
+	container.onmouseout=function(){
+		next.style.display='none';
+		pre.style.display='none';
+		play();
+	}
+	play();
 
 
 }
